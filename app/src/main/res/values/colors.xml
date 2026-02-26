@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#FFFFFFFF</color>
+    <color name="red_main">#FF4D4D</color>
+    <color name="red_hover">#FF6666</color>
+    <color name="red_subtle">#0DFF4D4D</color>
+    <color name="black">#000000</color>
+    <color name="black_light">#0A0A0A</color>
+    <color name="text_primary">#717171</color>
+    <color name="text_secondary">#404040</color>
+    <color name="text_tertiary">#303030</color>
+    <color name="border_subtle">#0DFFFFFF</color>
+    <color name="gray_800">#1F1F1F</color>
+    <color name="gray_900">#121212</color>
+</resources>

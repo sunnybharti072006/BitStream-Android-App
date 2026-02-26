@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/playlist_night_drives"
+        android:title="Night Drives"/>
+    <item
+        android:id="@+id/playlist_workout"
+        android:title="Workout"/>
+    <item
+        android:id="@+id/playlist_new"
+        android:title="+ New Playlist"/>
+</menu>

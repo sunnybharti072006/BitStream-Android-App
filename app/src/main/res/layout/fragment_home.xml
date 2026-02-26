@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/black_light">
+
+    <!-- Search Bar -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/searchLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        app:boxBackgroundMode="outline"
+        app:boxStrokeColor="@color/red_main"
+        app:hintTextColor="@color/text_primary"
+        style="@style/Widget.Material3.TextInputLayout.OutlinedBox">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/searchInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Search media..."
+            android:textColor="@color/text_primary"
+            android:textColorHint="@color/text_secondary"
+            android:textSize="14sp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/viewTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Night Mode"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:textColor="@color/text_tertiary"
+        android:letterSpacing="-0.05"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Header Row -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingVertical="8dp"
+        android:paddingHorizontal="16dp"
+        android:background="@color/black">
+
+        <TextView android:layout_width="40dp" android:layout_height="wrap_content" android:text="#" android:textColor="@color/gray_800" android:textSize="10sp" android:textStyle="bold" android:textAllCaps="true"/>
+        <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1.5" android:text="Title" android:textColor="@color/gray_800" android:textSize="10sp" android:textStyle="bold" android:textAllCaps="true"/>
+        <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="Artist" android:textColor="@color/gray_800" android:textSize="10sp" android:textStyle="bold" android:textAllCaps="true"/>
+        <TextView android:layout_width="60dp" android:layout_height="wrap_content" android:text="Add" android:textColor="@color/gray_800" android:textSize="10sp" android:textStyle="bold" android:textAllCaps="true" android:gravity="center"/>
+        <TextView android:layout_width="80dp" android:layout_height="wrap_content" android:text="Type" android:textColor="@color/gray_800" android:textSize="10sp" android:textStyle="bold" android:textAllCaps="true" android:gravity="end"/>
+
+    </LinearLayout>
+
+    <!-- Songs RecyclerView -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/songsRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="8dp"
+        android:paddingHorizontal="8dp"
+        android:clipToPadding="false" />
+
+</LinearLayout>
